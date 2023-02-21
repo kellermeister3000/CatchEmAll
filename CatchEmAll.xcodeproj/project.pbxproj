@@ -12,6 +12,9 @@
 		847B3F9429A4820000240F79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847B3F9329A4820000240F79 /* Assets.xcassets */; };
 		847B3F9729A4820000240F79 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847B3F9629A4820000240F79 /* Preview Assets.xcassets */; };
 		847B3F9F29A4AE2600240F79 /* CreaturesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B3F9E29A4AE2600240F79 /* CreaturesViewModel.swift */; };
+		847B3FA129A4B9BB00240F79 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B3FA029A4B9BB00240F79 /* DetailView.swift */; };
+		84B4739A29A4BEA1003933B0 /* Creature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B4739929A4BEA1003933B0 /* Creature.swift */; };
+		84B4739C29A4C23A003933B0 /* CreatureDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B4739B29A4C23A003933B0 /* CreatureDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		847B3F9629A4820000240F79 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		847B3F9D29A4824500240F79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		847B3F9E29A4AE2600240F79 /* CreaturesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreaturesViewModel.swift; sourceTree = "<group>"; };
+		847B3FA029A4B9BB00240F79 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		84B4739929A4BEA1003933B0 /* Creature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Creature.swift; sourceTree = "<group>"; };
+		84B4739B29A4C23A003933B0 /* CreatureDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatureDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +63,10 @@
 				847B3F9D29A4824500240F79 /* Info.plist */,
 				847B3F8F29A481FF00240F79 /* CatchEmAllApp.swift */,
 				847B3F9129A481FF00240F79 /* CreaturesListView.swift */,
+				847B3FA029A4B9BB00240F79 /* DetailView.swift */,
 				847B3F9E29A4AE2600240F79 /* CreaturesViewModel.swift */,
+				84B4739B29A4C23A003933B0 /* CreatureDetailViewModel.swift */,
+				84B4739929A4BEA1003933B0 /* Creature.swift */,
 				847B3F9329A4820000240F79 /* Assets.xcassets */,
 				847B3F9529A4820000240F79 /* Preview Content */,
 			);
@@ -143,7 +152,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				847B3F9F29A4AE2600240F79 /* CreaturesViewModel.swift in Sources */,
+				847B3FA129A4B9BB00240F79 /* DetailView.swift in Sources */,
 				847B3F9229A481FF00240F79 /* CreaturesListView.swift in Sources */,
+				84B4739A29A4BEA1003933B0 /* Creature.swift in Sources */,
+				84B4739C29A4C23A003933B0 /* CreatureDetailViewModel.swift in Sources */,
 				847B3F9029A481FF00240F79 /* CatchEmAllApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
