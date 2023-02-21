@@ -13,19 +13,36 @@ struct CreaturesListView: View {
     
     var body: some View {
         NavigationStack {
-            List(creaturesVM.creaturesArray, id: \.self) {
-                creature in
+            List(0..<creaturesVM.creaturesArray.count, id: \.self) {
+                index in
                 
-                NavigationLink {
-                    DetailView(creature: creature)
-                } label: {
-                    Text(creature.name.capitalized)
-                        .font(.title2)
+                LazyVStack {
+                    NavigationLink {
+                        DetailView(creature: creaturesVM.creaturesArray[index])
+                    } label: {
+                        Text("\(index+1).\(creaturesVM.creaturesArray[index].name.capitalized)")
+                            .font(.title2)
+                    }
+                }
+                .onAppear {
+                    if let lastCreature =
+                        creaturesVM.creaturesArray.last {
+                        if creaturesVM.creaturesArray[index].name == lastCreature.name && creaturesVM.urlString.hasPrefix("http") {
+                            Task {
+                                await creaturesVM.getData()
+                            }
+                        }
+                    }
                 }
             }
             
             .listStyle(.plain)
             .navigationTitle("Pokemon")
+            .toolbar {
+                ToolbarItem(placement: .bottomBar) {
+                    Text("\(creaturesVM.creaturesArray.count) of \(creaturesVM.count) creatures")
+                }
+            }
         }
         .task {
             await creaturesVM.getData()
