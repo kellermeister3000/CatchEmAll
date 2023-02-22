@@ -31,7 +31,7 @@ struct DetailView: View {
                         .resizable()
                         .scaledToFit()
                         .background(.white)
-                        .frame(height: 96)
+                        .frame(width: 96, height: 96)
                         .cornerRadius(16)
                         .shadow(radius: 8, x: 5, y: 5)
                         .overlay {
@@ -41,25 +41,12 @@ struct DetailView: View {
                         .padding(.trailing)
                     
                 } placeholder: {
-                    RoundedRectangle(cornerRadius: 10)
+                    Rectangle()
                         .foregroundColor(.clear)
-                        .frame(maxWidth: 96, maxHeight: 96)
+                        .frame(width: 96, height: 96)
+                        .padding(.trailing)
                 
                 }
-
-                
-//                Image(systemName: "figure.run.circle")
-//                    .resizable()
-//                    .scaledToFit()
-//                    .background(.white)
-//                    .frame(height: 96)
-//                    .cornerRadius(16)
-//                    .shadow(radius: 8, x: 5, y: 5)
-//                    .overlay {
-//                        RoundedRectangle(cornerRadius: 16)
-//                            .stroke(.gray.opacity(0.5), lineWidth: 1)
-//                    }
-//                    .padding(.trailing)
                 
                 VStack (alignment: .leading) {
                     HStack {
